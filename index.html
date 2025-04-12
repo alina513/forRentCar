@@ -18,40 +18,48 @@
     <link rel="stylesheet" href="./styles.css" media="all" />
   </head>
   <body>
+
     <header class="header container">
       <a
         ><svg width="150" height="18"><use href="./sprite.svg#logo"></use></svg></a>
+        <div class="header__wrapper__burger">
+          <a href="tel:+1234567890" class="header__tel"><svg width="24" height="24"><use href="./sprite.svg#phone"></use></svg>+123 456 7890</a>
       <button class="header__button" aria-label="Open menu">
         <svg width="24" height="24"><use href="./sprite.svg#burger"></use></svg>
-      </button>
+      </button></div>
     </header>
+
     <main>
+      <div class="main__flex">
+        <div class="main__flex__card">
       <!-- Section Description -->
       <section class="desription container">
-        <picture>
+        <div class="desription__main__wrapper">
+          <div class="desription__blur"></div>
+        <picture class="description__picture">
           <source
-            srcset="./images/car__main.webp 1x, ./images/car__main.webp-2x 2x"
-            media="(max-width: 768px)"
-            type="image/webp"
-          />
-
-          <!-- <source
-            srcset="
-              ./images/baner_tablet.webp    1x,
-              ./images/baner_tablet-2x.webp 2x
-            "
-            media="(max-width: 1024px)"
+            srcset="./images/car__main.webp 1x, ./images/car__main-2x.webp 2x"
+            media="(max-width: 767px)"
             type="image/webp"
           />
 
           <source
             srcset="
-              ./images/baner_desktop.webp    1x,
-              ./images/baner_desktop-2x.webp 2x
+              ./images/car__main__tablet.webp 1x,
+              ./images/car__main__tablet-2x.webp 2x
             "
-            media="(min-width: 1025px)"
+            media="(max-width: 1919px)"
             type="image/webp"
-          /> -->
+          />
+
+          <source
+            srcset="
+              ./images/car__main__desc.webp 1x,
+              ./images/car__main__desc-2x.webp 2x
+            "
+            media="(min-width: 1920px)"
+            type="image/webp"
+          />
 
           <img src="./images/car__main.webp" alt="Volkswagen Touareg" />
         </picture>
@@ -113,21 +121,9 @@
             </li>
           </ul>
         </div>
-        <button class="description__button">Proceed to Booking</button>
+        </div>
+        <button class="description__button button-midle button__size">Proceed to Booking</button>
       </section>
-
-      <!-- Section Question -->
-      <section class="questions">
-      <div class="questions__blur"></div>
-      <div class="questions__wrapper">
-      <h2 class="questions__title">Still have questions?</h2>
-      <p class="questions__desc">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
-    <button class="questions__button">Contact Us</button>
-    </div>
-    <img src="./images/Avatar.webp" alt="boy" class="questions__avatar-1"/>
-     <img src="./images/Avatar-2.webp" alt="girl" class="questions__avatar-2"/>
-      <img src="./images/Avatar-3.webp" alt="girl" class="questions__avatar-3"/>
-    </section>
 
      <!-- Section Step-1 --> 
       <section class="container step-1">
@@ -143,54 +139,54 @@
         <ul class="step-1__list">
             <li class="step-1__list__item card-hover">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#infinity"></use></svg>
-                <p class="step-1__item__service">Unlimited Mileage</p>
-            <p class="step-1__item__price">$15</p></div>
+                <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">Unlimited Mileage</p>
+            <p class="step-1__item__price">$15</p></div></div>
         <div class="step-1__item__wrapper__right card-right-hover"><svg width="24" height="24"><use href="./sprite.svg#minus"></use></svg></div>
             </li>
             <li class="step-1__list__item">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#globe"></use></svg>
-                <p class="step-1__item__service">Cross-border Fee</p>
-            <p class="step-1__item__price">15 EUR</p></div>
+                <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">Cross-border Fee</p>
+            <p class="step-1__item__price">15 EUR</p></div></div>
         <div class="step-1__item__wrapper__right"><svg width="24" height="24"><use href="./sprite.svg#plus"></use></svg></div>
             </li>
             <li class="step-1__list__item">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#petrol"></use></svg>
-                <p class="step-1__item__service">Full Tank Service</p>
-            <p class="step-1__item__price">15 EUR</p></div>
+                 <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">Full Tank Service</p>
+            <p class="step-1__item__price">15 EUR</p></div></div>
         <div class="step-1__item__wrapper__right"><svg width="24" height="24"><use href="./sprite.svg#plus"></use></svg></div>
             </li>
             <li class="step-1__list__item">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#seat"></use></svg>
-                <p class="step-1__item__service">Child Seat</p>
-            <p class="step-1__item__price">15 EUR</p></div>
+                 <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">Child Seat</p>
+            <p class="step-1__item__price">15 EUR</p></div></div>
         <div class="step-1__item__wrapper__right"><svg width="24" height="24"><use href="./sprite.svg#plus"></use></svg></div>
             </li>
             <li class="step-1__list__item">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#navigation"></use></svg>
-                <p class="step-1__item__service">GPS Navigation System</p>
-            <p class="step-1__item__price">15 EUR</p></div>
+                <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">GPS Navigation System</p>
+            <p class="step-1__item__price">15 EUR</p></div></div>
         <div class="step-1__item__wrapper__right"><svg width="24" height="24"><use href="./sprite.svg#plus"></use></svg></div>
             </li>
             <li class="step-1__list__item">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#wifi"></use></svg>
-                <p class="step-1__item__service">Wi-Fi HotspotWi-Fi Hotspot</p>
-            <p class="step-1__item__price">15 EUR</p></div>
+                <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">Wi-Fi HotspotWi-Fi Hotspot</p>
+            <p class="step-1__item__price">15 EUR</p></div></div>
         <div class="step-1__item__wrapper__right"><svg width="24" height="24"><use href="./sprite.svg#plus"></use></svg></div>
             </li>
             <li class="step-1__list__item">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#driver"></use></svg>
-                <p class="step-1__item__service">Additional Driver</p>
-            <p class="step-1__item__price">15 EUR</p></div>
+                <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">Additional Driver</p>
+            <p class="step-1__item__price">15 EUR</p></div></div>
         <div class="step-1__item__wrapper__right"><svg width="24" height="24"><use href="./sprite.svg#plus"></use></svg></div>
             </li>
             <li class="step-1__list__item">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#headphones"></use></svg>
-                <p class="step-1__item__service">Roadside assistance waiver</p>
-            <p class="step-1__item__price">15 EUR</p></div>
+                <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">Roadside assistance waiver</p>
+            <p class="step-1__item__price">15 EUR</p></div></div>
         <div class="step-1__item__wrapper__right"><svg width="24" height="24"><use href="./sprite.svg#plus"></use></svg></div>
             </li>
         </ul>
-         <button class="description__button">Continue</button>
+         <button class="description__button  button-midle">Continue</button>
       </section>
 
       <!-- Section Step-2 -->
@@ -223,7 +219,7 @@
                     <h3 class="step-2__list__name">15 EUR/day</h3>
                     <ul class="step-2__list__insurance">
                         <li class="step-2__list__insurance__item"><svg width="16" height="16"><use href="./sprite.svg#check"></use></svg>Coverage for vehicle damage in case of an accident (with excess).</li>
-                        <li class="step-2__list__insurance__item"><svg width="16" height="16"><use href="./sprite.svg#check"></use></svg>Limited financial liability with a deductible/<br/>excess.</li>
+                        <li class="step-2__list__insurance__item"><svg width="16" height="16"><use href="./sprite.svg#check"></use></svg>Limited financial liability with a deductible/ excess.</li>
                          <li class="step-2__list__insurance__item"><svg width="16" height="16"><use href="./sprite.svg#check"></use></svg>Partial coverage for car body damages (does not cover tires, windows, roof, or undercarriage).</li>
                     </ul>
                  </li>
@@ -238,33 +234,82 @@
                         </ul>
                   </li>
             </ul>
-             <button class="description__button">Continue</button>
-        </section>
+             <button class="description__button  button-midle">Continue</button>
+        </section></div>
 
         <!-- Section Step-3 -->
 <section class="container step-3">
     <form class="step-3__form">
-    <h3 class="step-1__title">Confirming Order</h3>
-    <label class="step-3__label">First Name*<input class="step-3__input" type="text" placeholder="Enter Your First Name"/></label>
-     <label class="step-3__label">Last Name<input class="step-3__input" type="text" placeholder="Enter Your Last Name"/></label>
-      <label class="step-3__label">Phone number<input class="step-3__input" type="tel" placeholder="+1 (555) 000-0000"/></label>
-       <label class="step-3__label">/<input class="step-3__input" type="email" placeholder="olivia@untitledui.com"/></label>
-    </form>
+      <div class="step-3__form__container">
+      <div class="step-3__form__container__wrapper">
+    <h3 class="step-3__title">Confirming Order</h3>
+    <label class="step-3__label"><div>First Name<span class="step-3__label__span">*</span></div><input class="step-3__input" type="text" placeholder="Enter Your First Name"/></label>
+     <label class="step-3__label"><div>Last Name<span class="step-3__label__span">*</span></div><input class="step-3__input" type="text" placeholder="Enter Your Last Name"/></label>
+      <label class="step-3__label"><div>Phone number<span class="step-3__label__span">*</span></div><input class="step-3__input" type="tel" placeholder="+1 (555) 000-0000"/></label>
+       <label class="step-3__label"><div>Email<span class="step-3__label__span">*</span></div><input class="step-3__input" type="email" placeholder="olivia@untitledui.com"/></label>
+    </div>
+       <div class="step-3__form__card">
+      <div class="step-3__form__card__wrapper">
+        <h4 class="step-3__form__card__title">Date</h4>
+        <p class="step-3__form__card__desc">Jan 1|08:00-Jan 2|20:00</p>
+      </div>
+      <div class="step-3__form__card__wrapper">
+        <h4 class="step-3__form__card__title">Location</h4>
+        <p class="step-3__form__card__desc">Bratislava Bus... - Bratislava Bus...</p>
+      </div>
+      <div class="step-3__form__card__wrapper">
+        <h4 class="step-3__form__card__title">Volkswagen Touareg</h4>
+        <p class="step-3__form__card__desc">32,98 EUR</p>
+      </div>
+      <div class="step-3__form__card__wrapper">
+        <h4 class="step-3__form__card__title">Basic Insurance</h4>
+        <p class="step-3__form__card__desc">15 EUR</p>
+      </div>
+      <div class="step-3__form__card__price__container">
+        <h3 class="step-3__form__card__price">Total</h3>
+        <p class="step-3__form__card__price">62,98 EUR</p>
+      </div>
+    </div>
+    </div>
+   <label class="step-3__form__chek__label">
+  <input type="checkbox" class="step-3__form__chek" />
+  <div class="custom-checkbox"><svg width="14" height="14"><use href="./sprite.svg#icon-bird"></use></svg></div>
+  I accept the terms & conditions
+</label>
+ <div class="step-3__button__wrapper">
+       <button class="description__button not-active">Pay Later 62,98 EUR </button>
+        <button class="description__button" type="submit">Pay Now 67,98 EUR <svg width="20" height="20"><use href="./sprite.svg#credit"></use></svg></button>
+        </div>
+    </form>     
 </section>
-
-
+</div>
+ <!-- Section Question -->
+      <section class="questions">
+      <div class="questions__blur"></div>
+      <div class="questions__wrapper">
+      <h2 class="questions__title">Still have questions?</h2>
+      <p class="questions__desc">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
+    <button class="questions__button">Contact Us</button>
+    </div>
+    <img src="./images/Avatar.webp" alt="boy" class="questions__avatar-1"/>
+     <img src="./images/Avatar-2.webp" alt="girl" class="questions__avatar-2"/>
+      <img src="./images/Avatar-3.webp" alt="girl" class="questions__avatar-3"/>
+    </section>
     </main>
-
     <footer class="container footer">
+      <div class="footer__wrapper__logo">
+        <div>
          <a
         ><svg width="126" height="15"><use href="./sprite.svg#logo"></use></svg></a>
       <p class="footer__desc">Your Trusted Ride Awaits.</p>
+      </div>
       <form class="footer__form">
         <label class="footer__label">Stay up to date
             <input type="email" class="footer__input" placeholder="Enter your email"/>
         </label>
-        <button class="footer__form__button">Subscribe</button>
+        <button class="footer__form__button" type="submit">Subscribe</button>
       </form>
+      </div>
       <div class="footer__line">
         <p class="footer__line__desc">© 2077 Untitled UI. All rights reserved.</p>
         <ul class="footer__list">
