@@ -20,16 +20,33 @@
   <body>
 
     <header class="header container">
+       <nav class="header__nav">
       <a
         ><svg width="150" height="18"><use href="./sprite.svg#logo"></use></svg></a>
+          <ul class="header__nav__list">
+            <li><a class="header__nav__list__link">Book</a></li>
+              <li><a class="header__nav__list__link">Help</a></li>
+                <li><a class="header__nav__list__link">FAQ</a></li>
+                  <li><a class="header__nav__list__link">Rental Policies</a></li>
+                    <li><a class="header__nav__list__link">Blog&Guides</a></li>
+          </ul>
+        </nav>
         <div class="header__wrapper__burger">
+            <button class="header__button__lang" aria-label="Choose language">EN
+        <svg width="24" height="24"><use href="./sprite.svg#chevron-down"></use></svg>
+      </button>
           <a href="tel:+1234567890" class="header__tel"><svg width="24" height="24"><use href="./sprite.svg#phone"></use></svg>+123 456 7890</a>
       <button class="header__button" aria-label="Open menu">
         <svg width="24" height="24"><use href="./sprite.svg#burger"></use></svg>
-      </button></div>
+      </button>
+        <button class="header__button__sign" aria-label="Sign in">
+        <svg width="24" height="24"><use href="./sprite.svg#log"></use></svg>Sign In 
+      </button>
+    </div>
     </header>
 
     <main>
+      <p class="menu">Home&nbsp&gt&nbspSearch results&nbsp&gt&nbsp<span class="menu-span">Volkswagen Touareg</span></p>
       <div class="main__flex">
         <div class="main__flex__card">
       <!-- Section Description -->
@@ -139,7 +156,7 @@
         <ul class="step-1__list">
             <li class="step-1__list__item card-hover">
                 <div class="step-1__item__wrapper__left"><svg class="step-1__item__svg"><use href="./sprite.svg#infinity"></use></svg>
-                <div class="step-1__item__wrapper__left__container"><p class="step-1__item__service">Unlimited Mileage</p>
+                <div class="step-1__item__wrapper__left__container step__left__container__basic"><p class="step-1__item__service">Unlimited Mileage</p>
             <p class="step-1__item__price">$15</p></div></div>
         <div class="step-1__item__wrapper__right card-right-hover"><svg width="24" height="24"><use href="./sprite.svg#minus"></use></svg></div>
             </li>
@@ -280,7 +297,12 @@
        <button class="description__button not-active">Pay Later 62,98 EUR </button>
         <button class="description__button" type="submit">Pay Now 67,98 EUR <svg width="20" height="20"><use href="./sprite.svg#credit"></use></svg></button>
         </div>
-    </form>     
+    </form>
+     <div class="step-3__button__wrapper_desc">
+       <button class="step__button__desc not-active">Pay Cash </button>
+        <button class="step__button__desc" type="submit">Pay Card</button>
+        </div>
+    </form>      
 </section>
 </div>
  <!-- Section Question -->
