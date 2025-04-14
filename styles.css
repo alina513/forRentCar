@@ -92,6 +92,9 @@ main {
 .menu {
   display: none;
 }
+.container {
+  width: 320px;
+}
 @media screen and (min-width: 393px) {
   .container {
     width: 393px;
@@ -106,12 +109,6 @@ main {
   .container {
     width: 100%;
   }
-  .header {
-    width: 1920px;
-  }
-  .footer {
-    width: 1920px;
-  }
   .main__flex {
     display: flex;
     gap: 48px;
@@ -120,9 +117,6 @@ main {
     padding-right: 228px;
     padding-bottom: 120px;
     padding-top: 128px;
-  }
-  .questions {
-    width: 1920px;
   }
   .main__flex__card {
     display: block;
@@ -253,7 +247,7 @@ main {
 
 /* Section Description */
 .desription {
-  padding: 40px 16px 80px 16px;
+  padding: 10px 10px 40px 10px;
 }
 .description__wrapper__card {
   margin-top: 24px;
@@ -296,7 +290,7 @@ main {
   margin-bottom: 24px;
 }
 .description__card__list__items {
-  width: 302px;
+  width: 200px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 6px;
@@ -305,7 +299,7 @@ main {
 }
 .description__card__item__svg {
   height: 28px;
-  width: 142px;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -329,6 +323,18 @@ main {
 }
 .desription__blur {
   display: none;
+}
+
+@media screen and (min-width: 393px) {
+  .description__card__item__svg {
+    width: 142px;
+  }
+  .desription {
+    padding: 40px 16px 80px 16px;
+  }
+  .description__card__list__items {
+    width: 302px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -594,6 +600,7 @@ main {
 }
 .footer__form {
   display: flex;
+  flex-direction: column;
   align-items: last baseline;
   gap: 16px;
 }
@@ -654,6 +661,12 @@ main {
   color: var(--white-50);
 }
 
+@media screen and (min-width: 393px) {
+  .footer__form {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__wrapper__logo {
     display: flex;
@@ -694,6 +707,7 @@ main {
 
 @media screen and (min-width: 1920px) {
   .footer {
+    width: 1920px;
     padding: 64px 228px 48px 228px;
   }
   .footer__input {
@@ -744,6 +758,7 @@ main {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 32px;
+  justify-content: center;
 }
 .step-1__list__item {
   display: flex;
@@ -795,6 +810,11 @@ main {
   background-color: var(--primary-light);
 }
 
+@media screen and (min-width: 393px) {
+  .step-1__list {
+    justify-content: start;
+  }
+}
 @media screen and (min-width: 768px) {
   .step-1 {
     padding: 16px 16px 80px 16px;
@@ -1095,11 +1115,7 @@ main {
   line-height: 140%;
   color: var(--primary);
 }
-@media screen and (min-width: 393px) {
-  .step-3__input {
-    width: 361px;
-  }
-}
+
 .step-3__form__card {
   border-radius: 16px;
   padding: 16px;
@@ -1107,12 +1123,7 @@ main {
   background-color: rgba(255, 255, 255, 0.04);
   margin-bottom: 24px;
 }
-@media screen and (min-width: 393px) {
-  .step-3__form__card {
-    width: 361px;
-    height: 193px;
-  }
-}
+
 .step-3__form__card__wrapper {
   display: flex;
   align-items: center;
@@ -1135,7 +1146,7 @@ main {
   justify-content: space-between;
   padding-top: 8px;
   border-top: 1px solid var(--white-20);
-  width: 329px;
+  width: 100%;
   margin-top: 24px;
 }
 .step-3__form__card__price {
@@ -1183,6 +1194,19 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+@media screen and (min-width: 393px) {
+  .step-3__form__card {
+    width: 361px;
+    height: 193px;
+  }
+  .step-3__form__card__price__container {
+    width: 329px;
+  }
+  .step-3__input {
+    width: 361px;
+  }
 }
 
 @media screen and (min-width: 768px) {
